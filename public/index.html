@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-wrapper">
+    <form id="regForm" class="registration-form">
+      <h2>Registration Form</h2>
+      <p class="subtitle">Fill out the form carefully for registration</p>
+
+      <!-- Student Name -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="firstName" required>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="lastName" required>
+        </div>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="gender" required>
+            <option value="">Please Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Student Email</label>
+          <input type="email" id="email" placeholder="ex: myname@example.com" required>
+        </div>
+      </div>
+
+      <!-- Student ID and Class -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>Student ID</label>
+          <input type="text" id="studentId" required>
+        </div>
+        <div class="form-group">
+          <label>List of Classes</label>
+          <select id="course" required>
+            <option value="">Please Select</option>
+            <option value="CS">Computer Science</option>
+            <option value="IT">Information Technology</option>
+            <option value="IS">Information Systems</option>
+            <option value="ENG">Engineering</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+      <p id="message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
